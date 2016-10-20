@@ -40,7 +40,7 @@ def main():
 		packet, addr = sniffer.recvfrom(65565)
 		contents = parse(packet)  # parse the packet from the parsing function
 		file.write(contents)  # dump the parsed data into the dump file
-		file.write(b'\n')
+		file.write(b'\t\x00\n\x00\n\t')
 		print(contents)
 	# print("Recieved packet from " + addr[0]) # print out the ip address
 
