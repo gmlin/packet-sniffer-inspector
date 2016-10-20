@@ -49,7 +49,7 @@ def main():
 
 
 def parse(packet):
-	return packet[14:-4]  # return the payload
+	return packet # return the payload
 
 
 # ***PLEASE KEEP THIS COMMENTED CODE FOR LATER***
