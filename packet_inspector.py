@@ -80,7 +80,17 @@ def parse_and_print_tcp(tcp):
 
     if src == 53 or dest == 53:
         parse_and_print_dns(data)
+    elif src == 80 or src == 443:
+        parse_and_print_http_response(data)
+    elif dest == 80 or dest == 443:
+        parse_and_print_http_request(data)
 
+
+def parse_and_print_http_request(http):
+    return
+
+def parse_and_print_http_response(http):
+    return
 
 def parse_and_print_udp(udp):
     src, dest, length, chk, data = parse_udp(udp)

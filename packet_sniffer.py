@@ -25,12 +25,12 @@ def main():
 
 	if os.name == 'nt':  # if the machine is a windows machine
 		sniffer = socket.socket(socket.AF_INET, socket.SOCK_RAW,
-								socket.IPPROTO_IP)  # create a socket that accepts all TCP datagrams
+								socket.IPPROTO_IP)  # create a socket that accepts all IP datagrams
 		sniffer.bind((host, 0))  # bind the socket to the localhost
 		sniffer.setsockopt(socket.IPPROTO_IP, socket.IP_HDRINCL, 1)  # set the sniffer so it will keep the IP headers
 		sniffer.ioctl(socket.SIO_RCVALL, socket.RCVALL_ON)  # for windows need to set to promiscuous mode
 	else:
-		sniffer = socket.socket(socket.AF_PACKET, socket.SOCK_RAW, socket.ntohs(3))  # create a socket that captures all ipv4 packets
+		sniffer = socket.socket(socket.AF_PACKET, socket.SOCK_RAW, socket.ntohs(3))  # create a socket that captures all ethernet frames
 	# sniffer.bind((host,0)) # bind the socket to the localhost
 	# sniffer.setsockopt(socket.IPPROTO_IP, socket.IP_HDRINCL, 1) # set the sniffer so it will keep the IP headers
 
