@@ -1,7 +1,8 @@
-import struct
+import struct, binascii, codecs, sys
 
-def main():
+def parse():
     f = open('dump_file.txt', 'rb')
+    sys.stdout = open('parsed_file.txt', 'w')
     i = 1
     for ethernet_frame in f.read().split(b'\t\x00\n\x00\n\t'):
         print('Ethernet frame #', i)
@@ -16,14 +17,31 @@ def main():
             print('Incomplete ethernet frame discarded.')
         print('')
     f.close()
+    sys.stdout.close()
+    sys.__stdout__
 
 
-def convert_bytes_to_hex_string(b, sep=' ', mark=False):
+def convert_bytes_to_hex_string(b, sep='', mark=False):
     start = ''
     if mark:
         start = '0x'
     return start + sep.join(map('{:02x}'.format, b)).upper()
 
+#def convert_hex_to_ascii(s):
+    #print(s)
+    #decode_hex = codecs.getdecoder("hex_codec")
+    #string = decode_hex(s)[0]
+    
+    #string = bytes.fromhex(s).decode('utf-8',"replace")
+    #print(hello)
+    #print(string)
+    #string = ""
+#    string = binascii.unhexlify(s)
+
+    #for byte in s:
+        #string + str(binascii.b2a_uu(byte))
+    #string = binascii.b2a_uu(s)
+#    return string
 
 def convert_bytes_to_ip_address(b):
     return '.'.join(map(str, b))
@@ -37,8 +55,7 @@ def convert_bytes_to_address(b):
 
 def parse_and_print_ipv4(ipv4):
     version, hl, tos, tl, id, flags, fo, ttl, proto, hc, src, dest, opt, data = parse_ipv4(ipv4)
-    print('IPv4')
-    print('')
+    print('----IPv4----')
     print('Version:', version)
     print('Header length:', hl)
     print('Type of service:', tos)
@@ -63,8 +80,7 @@ def parse_and_print_ipv4(ipv4):
 
 def parse_and_print_tcp(tcp):
     src, dest, seq, ack, off, res, flags, win, chk, urg, opt, data = parse_tcp(tcp)
-    print('TCP')
-    print('')
+    print('----TCP----')
     print('Source port:', src)
     print('Destination port:', dest)
     print('Sequence number:', seq)
@@ -94,8 +110,7 @@ def parse_and_print_http_response(http):
 
 def parse_and_print_udp(udp):
     src, dest, length, chk, data = parse_udp(udp)
-    print('UDP')
-    print('')
+    print('----UDP----')
     print('Source port:', src)
     print('Destination port:', dest)
     print('Length:', length)
@@ -111,9 +126,7 @@ def parse_and_print_dns(dns):
     ans_type,  ans_class, ans_ttl, ans_rdlength, ans_rdata,  auth_name, auth_type, auth_class, auth_ttl, \
     auth_rdlength, auth_rdata, add_name, add_type, add_class, add_ttl, add_rdlength, add_rdata = parse_dns(dns)
 
-    print('')
-    print('DNS')
-    print('')
+    print('----DNS----')
     print('Header')
     print('ID:', id)
     print('QR:', qr)
@@ -280,6 +293,3 @@ def parse_dns(dns):
     return id, qr, op, aa, tc, rd, ra, z, rcode, qdcount, ancount, nscount, arcount, qname, qtype, qclass, ans_name, \
     ans_type,  ans_class, ans_ttl, ans_rdlength, ans_rdata,  auth_name, auth_type, auth_class, auth_ttl, \
     auth_rdlength, auth_rdata, add_name, add_type, add_class, add_ttl, add_rdlength, add_rdata
-
-if __name__ == '__main__':
-    main()

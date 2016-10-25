@@ -1,0 +1,1035 @@
+Ethernet frame # 1
+====================
+----IPv4----
+Version: 4
+Header length: 5
+Type of service: 0
+Total length: 64
+Identification: 35904
+Flags: 2
+Fragment offset: 0
+TTL: 64
+Protocol: 17
+Header checksum: AF6A
+Source address: 127.0.0.1
+Destination address: 127.0.1.1
+Options: 
+Data: B3A80035002CFF3FEAA401000001000000000000037777770A73746F6E7962726F6F6B036564750000010001
+
+----UDP----
+Source port: 45992
+Destination port: 53
+Length: 44
+Checksum: FF3F
+Data: EAA401000001000000000000037777770A73746F6E7962726F6F6B036564750000010001
+----DNS----
+Header
+ID: 60068
+QR: 0
+Opcode: 0
+AA: 0
+TC: 0
+RD: 1
+RA: 0
+Z: 0
+RCODE: 0
+QDCOUNT: 1
+ANCOUNT: 0
+NSCOUNT: 0
+ARCOUNT: 0
+
+Question
+QNAME: www.stonybrook.edu
+QTYPE: 0001
+QCLASS: 0001
+
+Ethernet frame # 2
+====================
+----IPv4----
+Version: 4
+Header length: 5
+Type of service: 0
+Total length: 64
+Identification: 35904
+Flags: 2
+Fragment offset: 0
+TTL: 64
+Protocol: 17
+Header checksum: AF6A
+Source address: 127.0.0.1
+Destination address: 127.0.1.1
+Options: 
+Data: B3A80035002CFF3FEAA401000001000000000000037777770A73746F6E7962726F6F6B036564750000010001
+
+----UDP----
+Source port: 45992
+Destination port: 53
+Length: 44
+Checksum: FF3F
+Data: EAA401000001000000000000037777770A73746F6E7962726F6F6B036564750000010001
+----DNS----
+Header
+ID: 60068
+QR: 0
+Opcode: 0
+AA: 0
+TC: 0
+RD: 1
+RA: 0
+Z: 0
+RCODE: 0
+QDCOUNT: 1
+ANCOUNT: 0
+NSCOUNT: 0
+ARCOUNT: 0
+
+Question
+QNAME: www.stonybrook.edu
+QTYPE: 0001
+QCLASS: 0001
+
+Ethernet frame # 3
+====================
+----IPv4----
+Version: 4
+Header length: 5
+Type of service: 0
+Total length: 64
+Identification: 45410
+Flags: 2
+Fragment offset: 0
+TTL: 64
+Protocol: 17
+Header checksum: FB41
+Source address: 10.0.2.15
+Destination address: 130.245.255.4
+Options: 
+Data: A7360035002C8E46F8B301000001000000000000037777770A73746F6E7962726F6F6B036564750000010001
+
+----UDP----
+Source port: 42806
+Destination port: 53
+Length: 44
+Checksum: 8E46
+Data: F8B301000001000000000000037777770A73746F6E7962726F6F6B036564750000010001
+----DNS----
+Header
+ID: 63667
+QR: 0
+Opcode: 0
+AA: 0
+TC: 0
+RD: 1
+RA: 0
+Z: 0
+RCODE: 0
+QDCOUNT: 1
+ANCOUNT: 0
+NSCOUNT: 0
+ARCOUNT: 0
+
+Question
+QNAME: www.stonybrook.edu
+QTYPE: 0001
+QCLASS: 0001
+
+Ethernet frame # 4
+====================
+----IPv4----
+Version: 4
+Header length: 5
+Type of service: 0
+Total length: 69
+Identification: 35905
+Flags: 2
+Fragment offset: 0
+TTL: 64
+Protocol: 17
+Header checksum: AF64
+Source address: 127.0.0.1
+Destination address: 127.0.1.1
+Options: 
+Data: A07100350031FF44DE7D01000001000000000000066D617863646E0C626F6F74737472617063646E03636F6D0000010001
+
+----UDP----
+Source port: 41073
+Destination port: 53
+Length: 49
+Checksum: FF44
+Data: DE7D01000001000000000000066D617863646E0C626F6F74737472617063646E03636F6D0000010001
+----DNS----
+Header
+ID: 56957
+QR: 0
+Opcode: 0
+AA: 0
+TC: 0
+RD: 1
+RA: 0
+Z: 0
+RCODE: 0
+QDCOUNT: 1
+ANCOUNT: 0
+NSCOUNT: 0
+ARCOUNT: 0
+
+Question
+QNAME: maxcdn.bootstrapcdn.com
+QTYPE: 0001
+QCLASS: 0001
+
+Ethernet frame # 5
+====================
+----IPv4----
+Version: 4
+Header length: 5
+Type of service: 0
+Total length: 69
+Identification: 35905
+Flags: 2
+Fragment offset: 0
+TTL: 64
+Protocol: 17
+Header checksum: AF64
+Source address: 127.0.0.1
+Destination address: 127.0.1.1
+Options: 
+Data: A07100350031FF44DE7D01000001000000000000066D617863646E0C626F6F74737472617063646E03636F6D0000010001
+
+----UDP----
+Source port: 41073
+Destination port: 53
+Length: 49
+Checksum: FF44
+Data: DE7D01000001000000000000066D617863646E0C626F6F74737472617063646E03636F6D0000010001
+----DNS----
+Header
+ID: 56957
+QR: 0
+Opcode: 0
+AA: 0
+TC: 0
+RD: 1
+RA: 0
+Z: 0
+RCODE: 0
+QDCOUNT: 1
+ANCOUNT: 0
+NSCOUNT: 0
+ARCOUNT: 0
+
+Question
+QNAME: maxcdn.bootstrapcdn.com
+QTYPE: 0001
+QCLASS: 0001
+
+Ethernet frame # 6
+====================
+----IPv4----
+Version: 4
+Header length: 5
+Type of service: 0
+Total length: 69
+Identification: 45411
+Flags: 2
+Fragment offset: 0
+TTL: 64
+Protocol: 17
+Header checksum: FB3B
+Source address: 10.0.2.15
+Destination address: 130.245.255.4
+Options: 
+Data: A736003500318E4B458E01000001000000000000066D617863646E0C626F6F74737472617063646E03636F6D0000010001
+
+----UDP----
+Source port: 42806
+Destination port: 53
+Length: 49
+Checksum: 8E4B
+Data: 458E01000001000000000000066D617863646E0C626F6F74737472617063646E03636F6D0000010001
+----DNS----
+Header
+ID: 17806
+QR: 0
+Opcode: 0
+AA: 0
+TC: 0
+RD: 1
+RA: 0
+Z: 0
+RCODE: 0
+QDCOUNT: 1
+ANCOUNT: 0
+NSCOUNT: 0
+ARCOUNT: 0
+
+Question
+QNAME: maxcdn.bootstrapcdn.com
+QTYPE: 0001
+QCLASS: 0001
+
+Ethernet frame # 7
+====================
+----IPv4----
+Version: 4
+Header length: 5
+Type of service: 0
+Total length: 60
+Identification: 35906
+Flags: 2
+Fragment offset: 0
+TTL: 64
+Protocol: 17
+Header checksum: AF6C
+Source address: 127.0.0.1
+Destination address: 127.0.1.1
+Options: 
+Data: 9DD800350028FF3BB3ED01000001000000000000046661737405666F6E7473036E65740000010001
+
+----UDP----
+Source port: 40408
+Destination port: 53
+Length: 40
+Checksum: FF3B
+Data: B3ED01000001000000000000046661737405666F6E7473036E65740000010001
+----DNS----
+Header
+ID: 46061
+QR: 0
+Opcode: 0
+AA: 0
+TC: 0
+RD: 1
+RA: 0
+Z: 0
+RCODE: 0
+QDCOUNT: 1
+ANCOUNT: 0
+NSCOUNT: 0
+ARCOUNT: 0
+
+Question
+QNAME: fast.fonts.net
+QTYPE: 0001
+QCLASS: 0001
+
+Ethernet frame # 8
+====================
+----IPv4----
+Version: 4
+Header length: 5
+Type of service: 0
+Total length: 60
+Identification: 35906
+Flags: 2
+Fragment offset: 0
+TTL: 64
+Protocol: 17
+Header checksum: AF6C
+Source address: 127.0.0.1
+Destination address: 127.0.1.1
+Options: 
+Data: 9DD800350028FF3BB3ED01000001000000000000046661737405666F6E7473036E65740000010001
+
+----UDP----
+Source port: 40408
+Destination port: 53
+Length: 40
+Checksum: FF3B
+Data: B3ED01000001000000000000046661737405666F6E7473036E65740000010001
+----DNS----
+Header
+ID: 46061
+QR: 0
+Opcode: 0
+AA: 0
+TC: 0
+RD: 1
+RA: 0
+Z: 0
+RCODE: 0
+QDCOUNT: 1
+ANCOUNT: 0
+NSCOUNT: 0
+ARCOUNT: 0
+
+Question
+QNAME: fast.fonts.net
+QTYPE: 0001
+QCLASS: 0001
+
+Ethernet frame # 9
+====================
+----IPv4----
+Version: 4
+Header length: 5
+Type of service: 0
+Total length: 60
+Identification: 45412
+Flags: 2
+Fragment offset: 0
+TTL: 64
+Protocol: 17
+Header checksum: FB43
+Source address: 10.0.2.15
+Destination address: 130.245.255.4
+Options: 
+Data: A736003500288E429BF201000001000000000000046661737405666F6E7473036E65740000010001
+
+----UDP----
+Source port: 42806
+Destination port: 53
+Length: 40
+Checksum: 8E42
+Data: 9BF201000001000000000000046661737405666F6E7473036E65740000010001
+----DNS----
+Header
+ID: 39922
+QR: 0
+Opcode: 0
+AA: 0
+TC: 0
+RD: 1
+RA: 0
+Z: 0
+RCODE: 0
+QDCOUNT: 1
+ANCOUNT: 0
+NSCOUNT: 0
+ARCOUNT: 0
+
+Question
+QNAME: fast.fonts.net
+QTYPE: 0001
+QCLASS: 0001
+
+Ethernet frame # 10
+====================
+----IPv4----
+Version: 4
+Header length: 5
+Type of service: 0
+Total length: 94
+Identification: 29562
+Flags: 0
+Fragment offset: 0
+TTL: 64
+Protocol: 17
+Header checksum: 790C
+Source address: 130.245.255.4
+Destination address: 10.0.2.15
+Options: 
+Data: 0035A736004A00F2F8B385800001000200000000037777770A73746F6E7962726F6F6B036564750000010001C00C00050001000003840002C010C01000010001000003840004813102B0
+
+----UDP----
+Source port: 53
+Destination port: 42806
+Length: 74
+Checksum: 00F2
+Data: F8B385800001000200000000037777770A73746F6E7962726F6F6B036564750000010001C00C00050001000003840002C010C01000010001000003840004813102B0
+----DNS----
+Header
+ID: 63667
+QR: 1
+Opcode: 0
+AA: 1
+TC: 0
+RD: 5
+RA: 1
+Z: 0
+RCODE: 0
+QDCOUNT: 1
+ANCOUNT: 2
+NSCOUNT: 0
+ARCOUNT: 0
+
+Answer
+NAME: www.stonybrook.edu
+TYPE: 1
+CLASS: 1
+TTL: 3222011909
+RDLENGTH: 1
+RDATA: 00
+
+Answer
+NAME: 
+TYPE: 900
+CLASS: 2
+TTL: 3222323216
+RDLENGTH: 1
+RDATA: 00
+
+Ethernet frame # 11
+====================
+----IPv4----
+Version: 4
+Header length: 5
+Type of service: 0
+Total length: 94
+Identification: 2401
+Flags: 2
+Fragment offset: 0
+TTL: 64
+Protocol: 17
+Header checksum: 322C
+Source address: 127.0.1.1
+Destination address: 127.0.0.1
+Options: 
+Data: 0035B3A8004AFF5DEAA485800001000200000000037777770A73746F6E7962726F6F6B036564750000010001C00C00050001000003840002C010C01000010001000003840004813102B0
+
+----UDP----
+Source port: 53
+Destination port: 45992
+Length: 74
+Checksum: FF5D
+Data: EAA485800001000200000000037777770A73746F6E7962726F6F6B036564750000010001C00C00050001000003840002C010C01000010001000003840004813102B0
+----DNS----
+Header
+ID: 60068
+QR: 1
+Opcode: 0
+AA: 1
+TC: 0
+RD: 5
+RA: 1
+Z: 0
+RCODE: 0
+QDCOUNT: 1
+ANCOUNT: 2
+NSCOUNT: 0
+ARCOUNT: 0
+
+Answer
+NAME: www.stonybrook.edu
+TYPE: 1
+CLASS: 1
+TTL: 3222011909
+RDLENGTH: 1
+RDATA: 00
+
+Answer
+NAME: 
+TYPE: 900
+CLASS: 2
+TTL: 3222323216
+RDLENGTH: 1
+RDATA: 00
+
+Ethernet frame # 12
+====================
+----IPv4----
+Version: 4
+Header length: 5
+Type of service: 0
+Total length: 94
+Identification: 2401
+Flags: 2
+Fragment offset: 0
+TTL: 64
+Protocol: 17
+Header checksum: 322C
+Source address: 127.0.1.1
+Destination address: 127.0.0.1
+Options: 
+Data: 0035B3A8004AFF5DEAA485800001000200000000037777770A73746F6E7962726F6F6B036564750000010001C00C00050001000003840002C010C01000010001000003840004813102B0
+
+----UDP----
+Source port: 53
+Destination port: 45992
+Length: 74
+Checksum: FF5D
+Data: EAA485800001000200000000037777770A73746F6E7962726F6F6B036564750000010001C00C00050001000003840002C010C01000010001000003840004813102B0
+----DNS----
+Header
+ID: 60068
+QR: 1
+Opcode: 0
+AA: 1
+TC: 0
+RD: 5
+RA: 1
+Z: 0
+RCODE: 0
+QDCOUNT: 1
+ANCOUNT: 2
+NSCOUNT: 0
+ARCOUNT: 0
+
+Answer
+NAME: www.stonybrook.edu
+TYPE: 1
+CLASS: 1
+TTL: 3222011909
+RDLENGTH: 1
+RDATA: 00
+
+Answer
+NAME: 
+TYPE: 900
+CLASS: 2
+TTL: 3222323216
+RDLENGTH: 1
+RDATA: 00
+
+Ethernet frame # 13
+====================
+----IPv4----
+Version: 4
+Header length: 5
+Type of service: 0
+Total length: 60
+Identification: 35907
+Flags: 2
+Fragment offset: 0
+TTL: 64
+Protocol: 17
+Header checksum: AF6B
+Source address: 127.0.0.1
+Destination address: 127.0.1.1
+Options: 
+Data: ECEF00350028FF3B26C3010000010000000000000A73746F6E7962726F6F6B036564750000010001
+
+----UDP----
+Source port: 60655
+Destination port: 53
+Length: 40
+Checksum: FF3B
+Data: 26C3010000010000000000000A73746F6E7962726F6F6B036564750000010001
+----DNS----
+Header
+ID: 9923
+QR: 0
+Opcode: 0
+AA: 0
+TC: 0
+RD: 1
+RA: 0
+Z: 0
+RCODE: 0
+QDCOUNT: 1
+ANCOUNT: 0
+NSCOUNT: 0
+ARCOUNT: 0
+
+Question
+QNAME: stonybrook.edu
+QTYPE: 0001
+QCLASS: 0001
+
+Ethernet frame # 14
+====================
+----IPv4----
+Version: 4
+Header length: 5
+Type of service: 0
+Total length: 60
+Identification: 35907
+Flags: 2
+Fragment offset: 0
+TTL: 64
+Protocol: 17
+Header checksum: AF6B
+Source address: 127.0.0.1
+Destination address: 127.0.1.1
+Options: 
+Data: ECEF00350028FF3B26C3010000010000000000000A73746F6E7962726F6F6B036564750000010001
+
+----UDP----
+Source port: 60655
+Destination port: 53
+Length: 40
+Checksum: FF3B
+Data: 26C3010000010000000000000A73746F6E7962726F6F6B036564750000010001
+----DNS----
+Header
+ID: 9923
+QR: 0
+Opcode: 0
+AA: 0
+TC: 0
+RD: 1
+RA: 0
+Z: 0
+RCODE: 0
+QDCOUNT: 1
+ANCOUNT: 0
+NSCOUNT: 0
+ARCOUNT: 0
+
+Question
+QNAME: stonybrook.edu
+QTYPE: 0001
+QCLASS: 0001
+
+Ethernet frame # 15
+====================
+----IPv4----
+Version: 4
+Header length: 5
+Type of service: 0
+Total length: 132
+Identification: 29563
+Flags: 0
+Fragment offset: 0
+TTL: 64
+Protocol: 17
+Header checksum: 78E5
+Source address: 130.245.255.4
+Destination address: 10.0.2.15
+Options: 
+Data: 0035A7360070ED04458E81800001000200000000066D617863646E0C626F6F74737472617063646E03636F6D0000010001C00C00050001000000FC00230C626F6F74737472617063646E086A646F72666D616E0A6E6574646E612D63646EC020C035000100010000012700045E2E9F1D
+
+----UDP----
+Source port: 53
+Destination port: 42806
+Length: 112
+Checksum: ED04
+Data: 458E81800001000200000000066D617863646E0C626F6F74737472617063646E03636F6D0000010001C00C00050001000000FC00230C626F6F74737472617063646E086A646F72666D616E0A6E6574646E612D63646EC020C035000100010000012700045E2E9F1D
+----DNS----
+Header
+ID: 17806
+QR: 1
+Opcode: 0
+AA: 0
+TC: 0
+RD: 1
+RA: 1
+Z: 0
+RCODE: 0
+QDCOUNT: 1
+ANCOUNT: 2
+NSCOUNT: 0
+ARCOUNT: 0
+
+Answer
+NAME: maxcdn.bootstrapcdn.com
+TYPE: 1
+CLASS: 1
+TTL: 3222011909
+RDLENGTH: 1
+RDATA: 00
+
+Answer
+NAME: 
+TYPE: 252
+CLASS: 35
+TTL: 207777647
+RDLENGTH: 29811
+RDATA: 7472617063646E086A646F72666D616E0A6E6574646E612D63646EC020C035000100010000012700045E2E9F1D
+
+Ethernet frame # 16
+====================
+----IPv4----
+Version: 4
+Header length: 5
+Type of service: 0
+Total length: 132
+Identification: 2402
+Flags: 2
+Fragment offset: 0
+TTL: 64
+Protocol: 17
+Header checksum: 3205
+Source address: 127.0.1.1
+Destination address: 127.0.0.1
+Options: 
+Data: 0035A0710070FF83DE7D81800001000200000000066D617863646E0C626F6F74737472617063646E03636F6D0000010001C00C00050001000000FC00230C626F6F74737472617063646E086A646F72666D616E0A6E6574646E612D63646EC020C035000100010000012700045E2E9F1D
+
+----UDP----
+Source port: 53
+Destination port: 41073
+Length: 112
+Checksum: FF83
+Data: DE7D81800001000200000000066D617863646E0C626F6F74737472617063646E03636F6D0000010001C00C00050001000000FC00230C626F6F74737472617063646E086A646F72666D616E0A6E6574646E612D63646EC020C035000100010000012700045E2E9F1D
+----DNS----
+Header
+ID: 56957
+QR: 1
+Opcode: 0
+AA: 0
+TC: 0
+RD: 1
+RA: 1
+Z: 0
+RCODE: 0
+QDCOUNT: 1
+ANCOUNT: 2
+NSCOUNT: 0
+ARCOUNT: 0
+
+Answer
+NAME: maxcdn.bootstrapcdn.com
+TYPE: 1
+CLASS: 1
+TTL: 3222011909
+RDLENGTH: 1
+RDATA: 00
+
+Answer
+NAME: 
+TYPE: 252
+CLASS: 35
+TTL: 207777647
+RDLENGTH: 29811
+RDATA: 7472617063646E086A646F72666D616E0A6E6574646E612D63646EC020C035000100010000012700045E2E9F1D
+
+Ethernet frame # 17
+====================
+----IPv4----
+Version: 4
+Header length: 5
+Type of service: 0
+Total length: 132
+Identification: 2402
+Flags: 2
+Fragment offset: 0
+TTL: 64
+Protocol: 17
+Header checksum: 3205
+Source address: 127.0.1.1
+Destination address: 127.0.0.1
+Options: 
+Data: 0035A0710070FF83DE7D81800001000200000000066D617863646E0C626F6F74737472617063646E03636F6D0000010001C00C00050001000000FC00230C626F6F74737472617063646E086A646F72666D616E0A6E6574646E612D63646EC020C035000100010000012700045E2E9F1D
+
+----UDP----
+Source port: 53
+Destination port: 41073
+Length: 112
+Checksum: FF83
+Data: DE7D81800001000200000000066D617863646E0C626F6F74737472617063646E03636F6D0000010001C00C00050001000000FC00230C626F6F74737472617063646E086A646F72666D616E0A6E6574646E612D63646EC020C035000100010000012700045E2E9F1D
+----DNS----
+Header
+ID: 56957
+QR: 1
+Opcode: 0
+AA: 0
+TC: 0
+RD: 1
+RA: 1
+Z: 0
+RCODE: 0
+QDCOUNT: 1
+ANCOUNT: 2
+NSCOUNT: 0
+ARCOUNT: 0
+
+Answer
+NAME: maxcdn.bootstrapcdn.com
+TYPE: 1
+CLASS: 1
+TTL: 3222011909
+RDLENGTH: 1
+RDATA: 00
+
+Answer
+NAME: 
+TYPE: 252
+CLASS: 35
+TTL: 207777647
+RDLENGTH: 29811
+RDATA: 7472617063646E086A646F72666D616E0A6E6574646E612D63646EC020C035000100010000012700045E2E9F1D
+
+Ethernet frame # 18
+====================
+----IPv4----
+Version: 4
+Header length: 5
+Type of service: 0
+Total length: 60
+Identification: 45413
+Flags: 2
+Fragment offset: 0
+TTL: 64
+Protocol: 17
+Header checksum: FB42
+Source address: 10.0.2.15
+Destination address: 130.245.255.4
+Options: 
+Data: A736003500288E425790010000010000000000000A73746F6E7962726F6F6B036564750000010001
+
+----UDP----
+Source port: 42806
+Destination port: 53
+Length: 40
+Checksum: 8E42
+Data: 5790010000010000000000000A73746F6E7962726F6F6B036564750000010001
+----DNS----
+Header
+ID: 22416
+QR: 0
+Opcode: 0
+AA: 0
+TC: 0
+RD: 1
+RA: 0
+Z: 0
+RCODE: 0
+QDCOUNT: 1
+ANCOUNT: 0
+NSCOUNT: 0
+ARCOUNT: 0
+
+Question
+QNAME: stonybrook.edu
+QTYPE: 0001
+QCLASS: 0001
+
+Ethernet frame # 19
+====================
+----IPv4----
+Version: 4
+Header length: 5
+Type of service: 0
+Total length: 82
+Identification: 35908
+Flags: 2
+Fragment offset: 0
+TTL: 64
+Protocol: 17
+Header checksum: AF54
+Source address: 127.0.0.1
+Destination address: 127.0.1.1
+Options: 
+Data: DB260035003EFF51EB23010000010000000000000C626F6F74737472617063646E086A646F72666D616E0A6E6574646E612D63646E03636F6D0000010001
+
+----UDP----
+Source port: 56102
+Destination port: 53
+Length: 62
+Checksum: FF51
+Data: EB23010000010000000000000C626F6F74737472617063646E086A646F72666D616E0A6E6574646E612D63646E03636F6D0000010001
+----DNS----
+Header
+ID: 60195
+QR: 0
+Opcode: 0
+AA: 0
+TC: 0
+RD: 1
+RA: 0
+Z: 0
+RCODE: 0
+QDCOUNT: 1
+ANCOUNT: 0
+NSCOUNT: 0
+ARCOUNT: 0
+
+Question
+QNAME: bootstrapcdn.jdorfman.netdna-cdn.com
+QTYPE: 0001
+QCLASS: 0001
+
+Ethernet frame # 20
+====================
+----IPv4----
+Version: 4
+Header length: 5
+Type of service: 0
+Total length: 82
+Identification: 35908
+Flags: 2
+Fragment offset: 0
+TTL: 64
+Protocol: 17
+Header checksum: AF54
+Source address: 127.0.0.1
+Destination address: 127.0.1.1
+Options: 
+Data: DB260035003EFF51EB23010000010000000000000C626F6F74737472617063646E086A646F72666D616E0A6E6574646E612D63646E03636F6D0000010001
+
+----UDP----
+Source port: 56102
+Destination port: 53
+Length: 62
+Checksum: FF51
+Data: EB23010000010000000000000C626F6F74737472617063646E086A646F72666D616E0A6E6574646E612D63646E03636F6D0000010001
+----DNS----
+Header
+ID: 60195
+QR: 0
+Opcode: 0
+AA: 0
+TC: 0
+RD: 1
+RA: 0
+Z: 0
+RCODE: 0
+QDCOUNT: 1
+ANCOUNT: 0
+NSCOUNT: 0
+ARCOUNT: 0
+
+Question
+QNAME: bootstrapcdn.jdorfman.netdna-cdn.com
+QTYPE: 0001
+QCLASS: 0001
+
+Ethernet frame # 21
+====================
+----IPv4----
+Version: 4
+Header length: 5
+Type of service: 0
+Total length: 82
+Identification: 45414
+Flags: 2
+Fragment offset: 0
+TTL: 64
+Protocol: 17
+Header checksum: FB2B
+Source address: 10.0.2.15
+Destination address: 130.245.255.4
+Options: 
+Data: A7360035003E8E58D10A010000010000000000000C626F6F74737472617063646E086A646F72666D616E0A6E6574646E612D63646E03636F6D0000010001
+
+----UDP----
+Source port: 42806
+Destination port: 53
+Length: 62
+Checksum: 8E58
+Data: D10A010000010000000000000C626F6F74737472617063646E086A646F72666D616E0A6E6574646E612D63646E03636F6D0000010001
+----DNS----
+Header
+ID: 53514
+QR: 0
+Opcode: 0
+AA: 0
+TC: 0
+RD: 1
+RA: 0
+Z: 0
+RCODE: 0
+QDCOUNT: 1
+ANCOUNT: 0
+NSCOUNT: 0
+ARCOUNT: 0
+
+Question
+QNAME: bootstrapcdn.jdorfman.netdna-cdn.com
+QTYPE: 0001
+QCLASS: 0001
+
+Ethernet frame # 22
+====================
+----IPv4----
+Version: 4
+Header length: 5
+Type of service: 0
+Total length: 146
+Identification: 29564
+Flags: 0
+Fragment offset: 0
+TTL: 64
+Protocol: 17
+Header checksum: 78D6
+Source address: 130.245.255.4
+Destination address: 10.0.2.15
+Options: 
+Data: 0035A736007EF6369BF281800001000300000000046661737405666F6E7473036E65740000010001C00C000500010002039C0018046661737403776163043141433107696F746163646EC017C02C0005000100000421001602733903677031037761630867616D6D6163646EC017C050000100010000042100045DB8D8B6
+
+----UDP----
+Source port: 53
+Destination port: 42806
+Length: 126
+Checksum: F636
+Data: 9BF281800001000300000000046661737405666F6E7473036E65740000010001C00C000500010002039C0018046661737403776163043141433107696F746163646EC017C02C0005000100000421001602733903677031037761630867616D6D6163646EC017C050000100010000042100045DB8D8B6
