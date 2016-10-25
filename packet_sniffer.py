@@ -2,7 +2,7 @@
 # Guanming Lin -- 109299260
 # Sung Jae Min -- 109602826
 
-import socket, os, time
+import socket, os, time, re
 import packet_inspector as inspector
 
 
@@ -16,17 +16,24 @@ def main():
 			collect(float(run_time))
 		if command == 'searchk':
 			keyword = input("Please enter a keyword to search for: ")
-			#searchk(keyword)
+			file = open("parsed_file.txt")
+			count = 0
+			for line in file:
+				count+=searchk(keyword,line)
+			print("The keyword appears " + str(count) + " time(s) in the file")
 		if command == 'searchr':
 			regex = input("Please enter a regular expression to search with: ")
-			#searchr(regex)
+			file = open("parsed_file.txt")
+			print("Results of Regex:")
+			for line in file:
+				searchr(regex,line)
 		if command == 'exit':
 			print("Goodbye")
 			exit()
 		if command == 'help':
 			help()
 		else:
-			help()
+			pass
 
 def collect(run_time):
 	host = socket.gethostbyname(socket.gethostname())  # get the host name for the computer
@@ -38,15 +45,34 @@ def collect(run_time):
 	start_time = time.time() # record the time the capturing begins
 
 	while (time.time() - start_time) <= run_time:  # collect packets indefinitely
+		#print(str(time.time() - start_time))
 		packet, addr = sniffer.recvfrom(65565)
 		file.write(packet)  # dump the parsed data into the dump file
 		file.write(b'\t\x00\n\x00\n\t')
-		#print(packet)
 
-	print("Finished capturing, now parsing packets...")
+	#print("Finished capturing, now parsing packets...")
 	file.close()
 	inspector.parse()
-	print("Finished parsing packets.")
+	#print("Finished parsing packets.")
+
+def searchk(keyword,sentence):
+	s = sentence.split()
+	count = 0
+	for word in s:
+		if keyword in word:
+			count+=1
+	return count
+
+def searchr(regex,sentence):
+	result = ""
+	result = re.findall(r''+regex,sentence)
+	if result == "":
+		print("No matching strings found")
+	elif not result:
+		return
+	else:
+		print(result)
+	return
 
 def help():
 	print("----Help Menu----")

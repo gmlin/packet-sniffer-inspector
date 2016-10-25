@@ -2,6 +2,7 @@ import struct, binascii, codecs, sys
 
 def parse():
     f = open('dump_file.txt', 'rb')
+    f_stdout = sys.stdout
     sys.stdout = open('parsed_file.txt', 'w')
     i = 1
     for ethernet_frame in f.read().split(b'\t\x00\n\x00\n\t'):
@@ -17,11 +18,11 @@ def parse():
             print('Incomplete ethernet frame discarded.')
         print('')
     f.close()
-    sys.stdout.close()
-    sys.__stdout__
+    sys.stdout = f_stdout
+    return
 
 
-def convert_bytes_to_hex_string(b, sep='', mark=False):
+def convert_bytes_to_hex_string(b, sep=' ', mark=False):
     start = ''
     if mark:
         start = '0x'
@@ -32,7 +33,7 @@ def convert_hex_to_ascii(s):
     #decode_hex = codecs.getdecoder("hex_codec")
     #string = decode_hex(s)[0]
     
-    string = bytes.fromhex(s).decode('ISO-8859-2',"replace")
+    string = s.decode('ISO-8859-2',"replace")
     #print(hello)
     #print(string)
     #string = ""
@@ -69,7 +70,7 @@ def parse_and_print_ipv4(ipv4):
     print('Source address:', convert_bytes_to_ip_address(src))
     print('Destination address:', convert_bytes_to_ip_address(dest))
     print('Options:', convert_bytes_to_hex_string(opt))
-    print('Data:', convert_hex_to_ascii(data))
+    print('Data:', convert_bytes_to_hex_string(data))
     print('')
 
     if proto == 6:

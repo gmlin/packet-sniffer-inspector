@@ -5,12 +5,667 @@ Version: 4
 Header length: 5
 Type of service: 0
 Total length: 64
-Identification: 60313
+Identification: 32441
 Flags: 2
 Fragment offset: 0
 TTL: 64
 Protocol: 17
-Header checksum: 5011
+Header checksum: BC F1
 Source address: 127.0.0.1
 Destination address: 127.0.1.1
 Options: 
+Data: D6 7E 00 35 00 2C FF 3F 7E 60 01 00 00 01 00 00 00 00 00 00 03 77 77 77 0A 73 74 6F 6E 79 62 72 6F 6F 6B 03 65 64 75 00 00 01 00 01
+
+----UDP----
+Source port: 54910
+Destination port: 53
+Length: 44
+Checksum: FF 3F
+Data: 7E 60 01 00 00 01 00 00 00 00 00 00 03 77 77 77 0A 73 74 6F 6E 79 62 72 6F 6F 6B 03 65 64 75 00 00 01 00 01
+----DNS----
+Header
+ID: 32352
+QR: 0
+Opcode: 0
+AA: 0
+TC: 0
+RD: 1
+RA: 0
+Z: 0
+RCODE: 0
+QDCOUNT: 1
+ANCOUNT: 0
+NSCOUNT: 0
+ARCOUNT: 0
+
+Question
+QNAME: www.stonybrook.edu
+QTYPE: 00 01
+QCLASS: 00 01
+
+Ethernet frame # 2
+====================
+----IPv4----
+Version: 4
+Header length: 5
+Type of service: 0
+Total length: 64
+Identification: 32441
+Flags: 2
+Fragment offset: 0
+TTL: 64
+Protocol: 17
+Header checksum: BC F1
+Source address: 127.0.0.1
+Destination address: 127.0.1.1
+Options: 
+Data: D6 7E 00 35 00 2C FF 3F 7E 60 01 00 00 01 00 00 00 00 00 00 03 77 77 77 0A 73 74 6F 6E 79 62 72 6F 6F 6B 03 65 64 75 00 00 01 00 01
+
+----UDP----
+Source port: 54910
+Destination port: 53
+Length: 44
+Checksum: FF 3F
+Data: 7E 60 01 00 00 01 00 00 00 00 00 00 03 77 77 77 0A 73 74 6F 6E 79 62 72 6F 6F 6B 03 65 64 75 00 00 01 00 01
+----DNS----
+Header
+ID: 32352
+QR: 0
+Opcode: 0
+AA: 0
+TC: 0
+RD: 1
+RA: 0
+Z: 0
+RCODE: 0
+QDCOUNT: 1
+ANCOUNT: 0
+NSCOUNT: 0
+ARCOUNT: 0
+
+Question
+QNAME: www.stonybrook.edu
+QTYPE: 00 01
+QCLASS: 00 01
+
+Ethernet frame # 3
+====================
+----IPv4----
+Version: 4
+Header length: 5
+Type of service: 0
+Total length: 64
+Identification: 43081
+Flags: 2
+Fragment offset: 0
+TTL: 64
+Protocol: 17
+Header checksum: 04 5B
+Source address: 10.0.2.15
+Destination address: 130.245.255.4
+Options: 
+Data: A7 36 00 35 00 2C 8E 46 F5 B1 01 00 00 01 00 00 00 00 00 00 03 77 77 77 0A 73 74 6F 6E 79 62 72 6F 6F 6B 03 65 64 75 00 00 01 00 01
+
+----UDP----
+Source port: 42806
+Destination port: 53
+Length: 44
+Checksum: 8E 46
+Data: F5 B1 01 00 00 01 00 00 00 00 00 00 03 77 77 77 0A 73 74 6F 6E 79 62 72 6F 6F 6B 03 65 64 75 00 00 01 00 01
+----DNS----
+Header
+ID: 62897
+QR: 0
+Opcode: 0
+AA: 0
+TC: 0
+RD: 1
+RA: 0
+Z: 0
+RCODE: 0
+QDCOUNT: 1
+ANCOUNT: 0
+NSCOUNT: 0
+ARCOUNT: 0
+
+Question
+QNAME: www.stonybrook.edu
+QTYPE: 00 01
+QCLASS: 00 01
+
+Ethernet frame # 4
+====================
+----IPv4----
+Version: 4
+Header length: 5
+Type of service: 0
+Total length: 94
+Identification: 23058
+Flags: 0
+Fragment offset: 0
+TTL: 64
+Protocol: 17
+Header checksum: 92 74
+Source address: 130.245.255.4
+Destination address: 10.0.2.15
+Options: 
+Data: 00 35 A7 36 00 4A 03 F4 F5 B1 85 80 00 01 00 02 00 00 00 00 03 77 77 77 0A 73 74 6F 6E 79 62 72 6F 6F 6B 03 65 64 75 00 00 01 00 01 C0 0C 00 05 00 01 00 00 03 84 00 02 C0 10 C0 10 00 01 00 01 00 00 03 84 00 04 81 31 02 B0
+
+----UDP----
+Source port: 53
+Destination port: 42806
+Length: 74
+Checksum: 03 F4
+Data: F5 B1 85 80 00 01 00 02 00 00 00 00 03 77 77 77 0A 73 74 6F 6E 79 62 72 6F 6F 6B 03 65 64 75 00 00 01 00 01 C0 0C 00 05 00 01 00 00 03 84 00 02 C0 10 C0 10 00 01 00 01 00 00 03 84 00 04 81 31 02 B0
+----DNS----
+Header
+ID: 62897
+QR: 1
+Opcode: 0
+AA: 1
+TC: 0
+RD: 5
+RA: 1
+Z: 0
+RCODE: 0
+QDCOUNT: 1
+ANCOUNT: 2
+NSCOUNT: 0
+ARCOUNT: 0
+
+Answer
+NAME: www.stonybrook.edu
+TYPE: 1
+CLASS: 1
+TTL: 3222011909
+RDLENGTH: 1
+RDATA: 00
+
+Answer
+NAME: 
+TYPE: 900
+CLASS: 2
+TTL: 3222323216
+RDLENGTH: 1
+RDATA: 00
+
+Ethernet frame # 5
+====================
+----IPv4----
+Version: 4
+Header length: 5
+Type of service: 0
+Total length: 94
+Identification: 13791
+Flags: 2
+Fragment offset: 0
+TTL: 64
+Protocol: 17
+Header checksum: 05 AE
+Source address: 127.0.1.1
+Destination address: 127.0.0.1
+Options: 
+Data: 00 35 D6 7E 00 4A FF 5D 7E 60 85 80 00 01 00 02 00 00 00 00 03 77 77 77 0A 73 74 6F 6E 79 62 72 6F 6F 6B 03 65 64 75 00 00 01 00 01 C0 0C 00 05 00 01 00 00 03 84 00 02 C0 10 C0 10 00 01 00 01 00 00 03 84 00 04 81 31 02 B0
+
+----UDP----
+Source port: 53
+Destination port: 54910
+Length: 74
+Checksum: FF 5D
+Data: 7E 60 85 80 00 01 00 02 00 00 00 00 03 77 77 77 0A 73 74 6F 6E 79 62 72 6F 6F 6B 03 65 64 75 00 00 01 00 01 C0 0C 00 05 00 01 00 00 03 84 00 02 C0 10 C0 10 00 01 00 01 00 00 03 84 00 04 81 31 02 B0
+----DNS----
+Header
+ID: 32352
+QR: 1
+Opcode: 0
+AA: 1
+TC: 0
+RD: 5
+RA: 1
+Z: 0
+RCODE: 0
+QDCOUNT: 1
+ANCOUNT: 2
+NSCOUNT: 0
+ARCOUNT: 0
+
+Answer
+NAME: www.stonybrook.edu
+TYPE: 1
+CLASS: 1
+TTL: 3222011909
+RDLENGTH: 1
+RDATA: 00
+
+Answer
+NAME: 
+TYPE: 900
+CLASS: 2
+TTL: 3222323216
+RDLENGTH: 1
+RDATA: 00
+
+Ethernet frame # 6
+====================
+----IPv4----
+Version: 4
+Header length: 5
+Type of service: 0
+Total length: 94
+Identification: 13791
+Flags: 2
+Fragment offset: 0
+TTL: 64
+Protocol: 17
+Header checksum: 05 AE
+Source address: 127.0.1.1
+Destination address: 127.0.0.1
+Options: 
+Data: 00 35 D6 7E 00 4A FF 5D 7E 60 85 80 00 01 00 02 00 00 00 00 03 77 77 77 0A 73 74 6F 6E 79 62 72 6F 6F 6B 03 65 64 75 00 00 01 00 01 C0 0C 00 05 00 01 00 00 03 84 00 02 C0 10 C0 10 00 01 00 01 00 00 03 84 00 04 81 31 02 B0
+
+----UDP----
+Source port: 53
+Destination port: 54910
+Length: 74
+Checksum: FF 5D
+Data: 7E 60 85 80 00 01 00 02 00 00 00 00 03 77 77 77 0A 73 74 6F 6E 79 62 72 6F 6F 6B 03 65 64 75 00 00 01 00 01 C0 0C 00 05 00 01 00 00 03 84 00 02 C0 10 C0 10 00 01 00 01 00 00 03 84 00 04 81 31 02 B0
+----DNS----
+Header
+ID: 32352
+QR: 1
+Opcode: 0
+AA: 1
+TC: 0
+RD: 5
+RA: 1
+Z: 0
+RCODE: 0
+QDCOUNT: 1
+ANCOUNT: 2
+NSCOUNT: 0
+ARCOUNT: 0
+
+Answer
+NAME: www.stonybrook.edu
+TYPE: 1
+CLASS: 1
+TTL: 3222011909
+RDLENGTH: 1
+RDATA: 00
+
+Answer
+NAME: 
+TYPE: 900
+CLASS: 2
+TTL: 3222323216
+RDLENGTH: 1
+RDATA: 00
+
+Ethernet frame # 7
+====================
+----IPv4----
+Version: 4
+Header length: 5
+Type of service: 0
+Total length: 60
+Identification: 32443
+Flags: 2
+Fragment offset: 0
+TTL: 64
+Protocol: 17
+Header checksum: BC F3
+Source address: 127.0.0.1
+Destination address: 127.0.1.1
+Options: 
+Data: D7 D8 00 35 00 28 FF 3B CB 1E 01 00 00 01 00 00 00 00 00 00 0A 73 74 6F 6E 79 62 72 6F 6F 6B 03 65 64 75 00 00 01 00 01
+
+----UDP----
+Source port: 55256
+Destination port: 53
+Length: 40
+Checksum: FF 3B
+Data: CB 1E 01 00 00 01 00 00 00 00 00 00 0A 73 74 6F 6E 79 62 72 6F 6F 6B 03 65 64 75 00 00 01 00 01
+----DNS----
+Header
+ID: 51998
+QR: 0
+Opcode: 0
+AA: 0
+TC: 0
+RD: 1
+RA: 0
+Z: 0
+RCODE: 0
+QDCOUNT: 1
+ANCOUNT: 0
+NSCOUNT: 0
+ARCOUNT: 0
+
+Question
+QNAME: stonybrook.edu
+QTYPE: 00 01
+QCLASS: 00 01
+
+Ethernet frame # 8
+====================
+----IPv4----
+Version: 4
+Header length: 5
+Type of service: 0
+Total length: 60
+Identification: 32443
+Flags: 2
+Fragment offset: 0
+TTL: 64
+Protocol: 17
+Header checksum: BC F3
+Source address: 127.0.0.1
+Destination address: 127.0.1.1
+Options: 
+Data: D7 D8 00 35 00 28 FF 3B CB 1E 01 00 00 01 00 00 00 00 00 00 0A 73 74 6F 6E 79 62 72 6F 6F 6B 03 65 64 75 00 00 01 00 01
+
+----UDP----
+Source port: 55256
+Destination port: 53
+Length: 40
+Checksum: FF 3B
+Data: CB 1E 01 00 00 01 00 00 00 00 00 00 0A 73 74 6F 6E 79 62 72 6F 6F 6B 03 65 64 75 00 00 01 00 01
+----DNS----
+Header
+ID: 51998
+QR: 0
+Opcode: 0
+AA: 0
+TC: 0
+RD: 1
+RA: 0
+Z: 0
+RCODE: 0
+QDCOUNT: 1
+ANCOUNT: 0
+NSCOUNT: 0
+ARCOUNT: 0
+
+Question
+QNAME: stonybrook.edu
+QTYPE: 00 01
+QCLASS: 00 01
+
+Ethernet frame # 9
+====================
+----IPv4----
+Version: 4
+Header length: 5
+Type of service: 0
+Total length: 60
+Identification: 43083
+Flags: 2
+Fragment offset: 0
+TTL: 64
+Protocol: 17
+Header checksum: 04 5D
+Source address: 10.0.2.15
+Destination address: 130.245.255.4
+Options: 
+Data: A7 36 00 35 00 28 8E 42 7E EB 01 00 00 01 00 00 00 00 00 00 0A 73 74 6F 6E 79 62 72 6F 6F 6B 03 65 64 75 00 00 01 00 01
+
+----UDP----
+Source port: 42806
+Destination port: 53
+Length: 40
+Checksum: 8E 42
+Data: 7E EB 01 00 00 01 00 00 00 00 00 00 0A 73 74 6F 6E 79 62 72 6F 6F 6B 03 65 64 75 00 00 01 00 01
+----DNS----
+Header
+ID: 32491
+QR: 0
+Opcode: 0
+AA: 0
+TC: 0
+RD: 1
+RA: 0
+Z: 0
+RCODE: 0
+QDCOUNT: 1
+ANCOUNT: 0
+NSCOUNT: 0
+ARCOUNT: 0
+
+Question
+QNAME: stonybrook.edu
+QTYPE: 00 01
+QCLASS: 00 01
+
+Ethernet frame # 10
+====================
+----IPv4----
+Version: 4
+Header length: 5
+Type of service: 0
+Total length: 76
+Identification: 23059
+Flags: 0
+Fragment offset: 0
+TTL: 64
+Protocol: 17
+Header checksum: 92 85
+Source address: 130.245.255.4
+Destination address: 10.0.2.15
+Options: 
+Data: 00 35 A7 36 00 38 79 7B 7E EB 85 80 00 01 00 01 00 00 00 00 0A 73 74 6F 6E 79 62 72 6F 6F 6B 03 65 64 75 00 00 01 00 01 C0 0C 00 01 00 01 00 00 03 84 00 04 81 31 02 B0
+
+----UDP----
+Source port: 53
+Destination port: 42806
+Length: 56
+Checksum: 79 7B
+Data: 7E EB 85 80 00 01 00 01 00 00 00 00 0A 73 74 6F 6E 79 62 72 6F 6F 6B 03 65 64 75 00 00 01 00 01 C0 0C 00 01 00 01 00 00 03 84 00 04 81 31 02 B0
+----DNS----
+Header
+ID: 32491
+QR: 1
+Opcode: 0
+AA: 1
+TC: 0
+RD: 5
+RA: 1
+Z: 0
+RCODE: 0
+QDCOUNT: 1
+ANCOUNT: 1
+NSCOUNT: 0
+ARCOUNT: 0
+
+Answer
+NAME: stonybrook.edu
+TYPE: 1
+CLASS: 1
+TTL: 3222011905
+RDLENGTH: 1
+RDATA: 00
+
+Ethernet frame # 11
+====================
+----IPv4----
+Version: 4
+Header length: 5
+Type of service: 0
+Total length: 76
+Identification: 13792
+Flags: 2
+Fragment offset: 0
+TTL: 64
+Protocol: 17
+Header checksum: 05 BF
+Source address: 127.0.1.1
+Destination address: 127.0.0.1
+Options: 
+Data: 00 35 D7 D8 00 38 FF 4B CB 1E 85 80 00 01 00 01 00 00 00 00 0A 73 74 6F 6E 79 62 72 6F 6F 6B 03 65 64 75 00 00 01 00 01 C0 0C 00 01 00 01 00 00 03 84 00 04 81 31 02 B0
+
+----UDP----
+Source port: 53
+Destination port: 55256
+Length: 56
+Checksum: FF 4B
+Data: CB 1E 85 80 00 01 00 01 00 00 00 00 0A 73 74 6F 6E 79 62 72 6F 6F 6B 03 65 64 75 00 00 01 00 01 C0 0C 00 01 00 01 00 00 03 84 00 04 81 31 02 B0
+----DNS----
+Header
+ID: 51998
+QR: 1
+Opcode: 0
+AA: 1
+TC: 0
+RD: 5
+RA: 1
+Z: 0
+RCODE: 0
+QDCOUNT: 1
+ANCOUNT: 1
+NSCOUNT: 0
+ARCOUNT: 0
+
+Answer
+NAME: stonybrook.edu
+TYPE: 1
+CLASS: 1
+TTL: 3222011905
+RDLENGTH: 1
+RDATA: 00
+
+Ethernet frame # 12
+====================
+----IPv4----
+Version: 4
+Header length: 5
+Type of service: 0
+Total length: 76
+Identification: 13792
+Flags: 2
+Fragment offset: 0
+TTL: 64
+Protocol: 17
+Header checksum: 05 BF
+Source address: 127.0.1.1
+Destination address: 127.0.0.1
+Options: 
+Data: 00 35 D7 D8 00 38 FF 4B CB 1E 85 80 00 01 00 01 00 00 00 00 0A 73 74 6F 6E 79 62 72 6F 6F 6B 03 65 64 75 00 00 01 00 01 C0 0C 00 01 00 01 00 00 03 84 00 04 81 31 02 B0
+
+----UDP----
+Source port: 53
+Destination port: 55256
+Length: 56
+Checksum: FF 4B
+Data: CB 1E 85 80 00 01 00 01 00 00 00 00 0A 73 74 6F 6E 79 62 72 6F 6F 6B 03 65 64 75 00 00 01 00 01 C0 0C 00 01 00 01 00 00 03 84 00 04 81 31 02 B0
+----DNS----
+Header
+ID: 51998
+QR: 1
+Opcode: 0
+AA: 1
+TC: 0
+RD: 5
+RA: 1
+Z: 0
+RCODE: 0
+QDCOUNT: 1
+ANCOUNT: 1
+NSCOUNT: 0
+ARCOUNT: 0
+
+Answer
+NAME: stonybrook.edu
+TYPE: 1
+CLASS: 1
+TTL: 3222011905
+RDLENGTH: 1
+RDATA: 00
+
+Ethernet frame # 13
+====================
+----IPv4----
+Version: 4
+Header length: 5
+Type of service: 0
+Total length: 60
+Identification: 8766
+Flags: 2
+Fragment offset: 0
+TTL: 64
+Protocol: 6
+Header checksum: 88 8E
+Source address: 10.0.2.15
+Destination address: 129.49.2.176
+Options: 
+Data: C3 58 00 50 3F B1 80 86 00 00 00 00 A0 02 72 10 90 1E 00 00 02 04 05 B4 04 02 08 0A 00 5A A2 B8 00 00 00 00 01 03 03 07
+
+----TCP----
+Source port: 50008
+Destination port: 80
+Sequence number: 1068597382
+Acknowledgement number: 0
+Offset: 10
+Reserved: 0
+Flags: 2
+Window: 29200
+Checksum: 90 1E
+Urgent pointer: 0
+Options: 02 04 05 B4 04 02 08 0A 00 5A A2 B8 00 00 00 00 01 03 03 07
+Data: 
+
+Ethernet frame # 14
+====================
+Incomplete ethernet frame discarded.
+
+Ethernet frame # 15
+====================
+Incomplete ethernet frame discarded.
+
+Ethernet frame # 16
+====================
+----IPv4----
+Version: 4
+Header length: 5
+Type of service: 0
+Total length: 64
+Identification: 32939
+Flags: 2
+Fragment offset: 0
+TTL: 64
+Protocol: 17
+Header checksum: BA FF
+Source address: 127.0.0.1
+Destination address: 127.0.1.1
+Options: 
+Data: C4 FF 00 35 00 2C FF 3F 5C 71 01 00 00 01 00 00 00 00 00 00 03 77 77 77 0A 73 74 6F 6E 79 62 72 6F 6F 6B 03 65 64 75 00 00 01 00 01
+
+----UDP----
+Source port: 50431
+Destination port: 53
+Length: 44
+Checksum: FF 3F
+Data: 5C 71 01 00 00 01 00 00 00 00 00 00 03 77 77 77 0A 73 74 6F 6E 79 62 72 6F 6F 6B 03 65 64 75 00 00 01 00 01
+----DNS----
+Header
+ID: 23665
+QR: 0
+Opcode: 0
+AA: 0
+TC: 0
+RD: 1
+RA: 0
+Z: 0
+RCODE: 0
+QDCOUNT: 1
+ANCOUNT: 0
+NSCOUNT: 0
+ARCOUNT: 0
+
+Question
+QNAME: www.stonybrook.edu
+QTYPE: 00 01
+QCLASS: 00 01
+
+Ethernet frame # 17
+====================
+Incomplete ethernet frame discarded.
+
