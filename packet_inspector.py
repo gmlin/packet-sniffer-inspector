@@ -27,12 +27,12 @@ def convert_bytes_to_hex_string(b, sep='', mark=False):
         start = '0x'
     return start + sep.join(map('{:02x}'.format, b)).upper()
 
-#def convert_hex_to_ascii(s):
+def convert_hex_to_ascii(s):
     #print(s)
     #decode_hex = codecs.getdecoder("hex_codec")
     #string = decode_hex(s)[0]
     
-    #string = bytes.fromhex(s).decode('utf-8',"replace")
+    string = bytes.fromhex(s).decode('ISO-8859-2',"replace")
     #print(hello)
     #print(string)
     #string = ""
@@ -41,7 +41,7 @@ def convert_bytes_to_hex_string(b, sep='', mark=False):
     #for byte in s:
         #string + str(binascii.b2a_uu(byte))
     #string = binascii.b2a_uu(s)
-#    return string
+    return string
 
 def convert_bytes_to_ip_address(b):
     return '.'.join(map(str, b))
@@ -69,7 +69,7 @@ def parse_and_print_ipv4(ipv4):
     print('Source address:', convert_bytes_to_ip_address(src))
     print('Destination address:', convert_bytes_to_ip_address(dest))
     print('Options:', convert_bytes_to_hex_string(opt))
-    print('Data:', convert_bytes_to_hex_string(data))
+    print('Data:', convert_hex_to_ascii(data))
     print('')
 
     if proto == 6:

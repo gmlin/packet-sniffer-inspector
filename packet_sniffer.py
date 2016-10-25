@@ -1,6 +1,6 @@
 # Devon Maguire -- 109284550
 # Guanming Lin -- 109299260
-# Sung Jae Min -- ID #
+# Sung Jae Min -- 109602826
 
 import socket, os, time
 import packet_inspector as inspector
@@ -33,7 +33,7 @@ def collect(run_time):
 
 	sniffer = socket.socket(socket.AF_PACKET, socket.SOCK_RAW, socket.ntohs(3))  # create a socket that captures all ethernet frames
 
-	file = open("dump_file.txt", 'w+b')  # create a new file to dump the bytes into
+	file = open("dump_file.txt", 'wb+')  # create a new file to dump the bytes into
 
 	start_time = time.time() # record the time the capturing begins
 
